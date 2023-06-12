@@ -16,7 +16,7 @@ RUN mvn clean package
 
 FROM openjdk:17
 
-ARG JAR_NAME="cosmos-service-maven-0.0.1-SNAPSHOT"
+ARG JAR_NAME="cosmos-service-countries-maven-0.0.1-SNAPSHOT"
 
 WORKDIR /usr/src/app
 

@@ -1,8 +1,8 @@
-package com.example.cosmosservicemaven.controller;
+package com.example.cosmosservicecountries.controller;
 
 import com.azure.spring.data.cosmos.core.query.CosmosPageRequest;
-import com.example.cosmosservicemaven.model.City;
-import com.example.cosmosservicemaven.service.CityService;
+import com.example.cosmosservicecountries.model.Country;
+import com.example.cosmosservicecountries.service.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,18 +15,18 @@ import java.util.List;
 public class CityController {
 
     @Autowired
-    private CityService cityService;
+    private CountryService countryService;
 
-    @GetMapping("/cities")
-    public List<City> getCities() {
+    @GetMapping("/countries")
+    public List<Country> getCities() {
         final CosmosPageRequest pageRequest = new CosmosPageRequest(0, 100, null);
 
-        Page<City> page = cityService.findAll(pageRequest);
-        List<City> pageContent = page.getContent();
+        Page<Country> page = countryService.findAll(pageRequest);
+        List<Country> pageContent = page.getContent();
 
         while (page.hasNext()) {
             Pageable nextPageable = page.nextPageable();
-            page = cityService.findAll(nextPageable);
+            page = countryService.findAll(nextPageable);
             pageContent = page.getContent();
         }
 

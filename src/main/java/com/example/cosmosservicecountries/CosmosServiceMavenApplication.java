@@ -1,4 +1,4 @@
-package com.example.cosmosservicemaven;
+package com.example.cosmosservicecountries;
 
 import com.azure.spring.data.cosmos.repository.config.EnableCosmosRepositories;
 import org.springframework.boot.SpringApplication;

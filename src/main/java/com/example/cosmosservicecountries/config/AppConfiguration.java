@@ -1,4 +1,4 @@
-package com.example.cosmosservicemaven.config;
+package com.example.cosmosservicecountries.config;
 
 import com.azure.cosmos.CosmosClientBuilder;
 import com.azure.spring.data.cosmos.config.AbstractCosmosConfiguration;

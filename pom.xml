@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>cosmos-service-maven</artifactId>
+	<artifactId>cosmos-service-countries-maven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cosmos-service-maven</name>
+	<name>cosmos-service-countries-maven</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

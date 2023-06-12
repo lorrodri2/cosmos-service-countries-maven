@@ -1,11 +1,11 @@
-package com.example.cosmosservicemaven.model;
+package com.example.cosmosservicecountries.model;
 
 import com.azure.spring.data.cosmos.core.mapping.Container;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Version;
 
-@Container(containerName = "cities-container")
-public class City {
+@Container(containerName = "countries-container")
+public class Country {
 
     @Id
     private String id;
